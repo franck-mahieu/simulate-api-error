@@ -1,0 +1,57 @@
+{
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "sinon": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-undef": "warn",
+    "import/no-extraneous-dependencies": "warn",
+    "camelcase": "warn",
+    "no-underscore-dangle": "warn",
+    "no-restricted-globals": "warn",
+    "no-unused-expressions": "warn",
+    "global-require": "warn",
+    "no-await-in-loop": "warn",
+    "no-restricted-syntax": "warn",
+    "class-methods-use-this": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "arrowParens": "avoid"
+      }
+    ],
+    "arrow-parens": [
+      1,
+      "as-needed"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "Sources"
+          // replace with your app-module-path directory
+        ]
+      }
+    }
+  }
+}

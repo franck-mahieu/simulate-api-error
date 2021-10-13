@@ -1,0 +1,13 @@
+{
+  "name": "simulate-api-error",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {
+    "start:api-timeout": "node src/apiTimeout.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
